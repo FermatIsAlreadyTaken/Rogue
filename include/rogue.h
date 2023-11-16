@@ -53,19 +53,13 @@ void movePlayer(Position newPosition);
 
 /* Map Functions (mapCarveType.c) */
 void freeMap(void);
-/* Functions For Carve */
 Tile** createMapForCarve(void);
-// Position setupMapForCarve(void);
-// Position setupMapForCarveNoOverlap(void)
 bool roomOverlaps(Room *rooms, int roomsCounter, int y, int x, int height, int width);
 /* mine map functions (check for Overlap-Carve) (mineCarveType.c) */
-// Position setupMapForMineNoOverlap(void);
-// Position setupMapForMineGridVersion(int NxN);
 Position setupMapForMineBinarySpacePartitionVersion(int n, int m);
 
 /* Room Functions (room.c) */
 Room createRoom(int y, int x, int height, int width);
-/* (for carve) */
 void drawRoomForCarve(Room room);
 void connectRoomCenters(Position centerOne, Position centerTwo);
 
