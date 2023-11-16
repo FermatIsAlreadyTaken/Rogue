@@ -14,8 +14,6 @@
 #define VISIBLE_COLOR 1
 #define SEEN_COLOR 2
 
-// https://dev.to/ignaoya/the-c-roguelike-tutorial-part-2-the-map-2hg
-
 typedef struct Position {
 	int y;
 	int x;
@@ -42,9 +40,6 @@ typedef struct Room {
 	Position position;
 	Position center;
 } Room;
-
-// const int MAP_HEIGHT = 40;
-// const int MAP_WIDTH = 140;
 
 /* Engine Functions (engine.c) */
 bool cursesSetup(void);
@@ -89,8 +84,6 @@ int getSign(int a);
 
 /* Externs */
 extern Entity *player;
-// extern const int MAP_HEIGHT;
-// extern const int MAP_WIDTH;
 extern Tile **map;
 
 #endif  
